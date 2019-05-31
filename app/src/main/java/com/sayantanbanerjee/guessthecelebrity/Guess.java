@@ -15,9 +15,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Guess extends AppCompatActivity {
 
@@ -25,47 +24,76 @@ public class Guess extends AppCompatActivity {
     ArrayList<String> named = new ArrayList();
     ArrayList<String> name2d = new ArrayList();
     ArrayList<String> name3d = new ArrayList();
-    ArrayList<String> name4d = new ArrayList();
+    ArrayList<String> nametemp = new ArrayList();
+
+
+    RadioGroup radio;
 
     ImageView imageView;
     EditText editText;
     TextView textView;
     boolean checked;
+    int Button = -1;
+    boolean flagDOWN = true;
     int temp = 0;
+    int fina = -2;
 
-    public void radioButtonCheck(View view){
-        checked = ((RadioButton) view).isChecked();
+    public int Rand1() {
+        Random rand = new Random();
+        int a = rand.nextInt(8);
+        return a;
+    }
 
-        if(checked == false)
-        {
-            Toast.makeText(this,"First Select a Button",Toast.LENGTH_LONG).show();
-        }
-        else
-        {
-            switch(view.getId())
-            {
-                case R.id.radioButton:
+    public int Rand2() {
+        Random rand = new Random();
+        int a = rand.nextInt(8) + 8;
+        return a;
+    }
 
-                    break;
+    public int Rand3() {
+        Random rand = new Random();
+        int a = rand.nextInt(8) + 16;
+        return a;
+    }
 
-                case R.id.radioButton2:
 
-                    break;
+    public int RandQue() {
+        Random rand = new Random();
+        int a = rand.nextInt(3);
+        return a;
+    }
 
-                case R.id.radioButton3:
+    public void radioButtonCheck(View view) {
 
-                    break;
+        checked = true;
+        switch (view.getId()) {
 
-                case R.id.radioButton4:
 
-                    break;
-            }
+            case R.id.radioButton:
+                Button = 0;
+
+                break;
+
+            case R.id.radioButton2:
+
+                Button = 1;
+                break;
+
+            case R.id.radioButton3:
+
+                Button = 2;
+                break;
+
+            case R.id.radioButton4:
+
+                Button = 3;
+                break;
         }
 
 
     }
 
-    public void addition(){
+    public void addition() {
 
         imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Robert_Downey%2C_Jr._SDCC_2014_%28cropped%29.jpg/220px-Robert_Downey%2C_Jr._SDCC_2014_%28cropped%29.jpg");
         named.add("Robert Downey Jr.");
@@ -106,7 +134,6 @@ public class Guess extends AppCompatActivity {
         named.add("Benedict Cumberbatch");
         name2d.add("Dr. Stephen Strange");
         name3d.add("Doctor Strange");
-
 
 
         imaged.add("https://www.aceshowbiz.com/images/wennpic/preview/anthony-mackie-premiere-black-or-white-01.jpg");
@@ -200,10 +227,6 @@ public class Guess extends AppCompatActivity {
         name3d.add("Tony Stark's Wife");
 
 
-
-
-
-
     }
 
     public class ImageDownloader extends AsyncTask<String, Void, Bitmap> {
@@ -211,8 +234,11 @@ public class Guess extends AppCompatActivity {
         protected Bitmap doInBackground(String... urls) {
             try {
                 URL url = new URL(urls[0]);
+                flagDOWN = true;
+                checked = false;
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
+
                 InputStream in = connection.getInputStream();
                 Bitmap myBitmap = BitmapFactory.decodeStream(in);
                 return myBitmap;
@@ -220,6 +246,12 @@ public class Guess extends AppCompatActivity {
                 e.printStackTrace();
                 return null;
             }
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            super.onPostExecute(bitmap);
+            flagDOWN = false;
         }
     }
 
@@ -238,21 +270,96 @@ public class Guess extends AppCompatActivity {
         }
     }
 
-    public void check(View view) {
-        Toast.makeText(this, named.get(temp), Toast.LENGTH_LONG).show();
+    public void setup(int k) {
+        int num1, num2, num3;
+        String var = "";
+        setImage(k);
+
+        int textnum = RandQue();
+
+        do {
+            num1 = Rand1();
+        } while (num1 == k);
+        do {
+            num2 = Rand2();
+        } while (num2 == k);
+        do {
+            num3 = Rand3();
+        } while (num3 == k);
+
+
+        if (textnum == 0) {
+            textView.setText("Name of this actor/actress?");
+            var = named.get(k);
+            nametemp.add(named.get(k));
+            nametemp.add(named.get(num1));
+            nametemp.add(named.get(num2));
+            nametemp.add(named.get(num3));
+        } else if (textnum == 1) {
+            textView.setText("Name of the character this actor/actress plays?");
+            var = name2d.get(k);
+            nametemp.add(name2d.get(k));
+            nametemp.add(name2d.get(num1));
+            nametemp.add(name2d.get(num2));
+            nametemp.add(name2d.get(num3));
+        } else if (textnum == 2) {
+            textView.setText("This actor/actress known for the Marvel character?");
+            var = name3d.get(k);
+            nametemp.add(name3d.get(k));
+            nametemp.add(name3d.get(num1));
+            nametemp.add(name3d.get(num2));
+            nametemp.add(name3d.get(num3));
+        }
+
+        Collections.shuffle(nametemp);
+
+        for (int i = 0; i < 4; i++) {
+            if ((nametemp.get(i)).equals(var)) {
+                fina = i;
+                break;
+            }
+        }
+
+        RadioButton button = (RadioButton) findViewById(R.id.radioButton);
+        button.setText(nametemp.get(0));
+        RadioButton button2 = (RadioButton) findViewById(R.id.radioButton2);
+        button2.setText(nametemp.get(1));
+        RadioButton button3 = (RadioButton) findViewById(R.id.radioButton3);
+        button3.setText(nametemp.get(2));
+        RadioButton button4 = (RadioButton) findViewById(R.id.radioButton4);
+        button4.setText(nametemp.get(3));
+
+        nametemp.clear();
     }
 
     public void refresh(View view) {
-        int n;
-        do {
-            Random rand = new Random();
-            n = rand.nextInt(named.size());
-        }while( n==temp);
-        temp = n;
-        setImage(n);
+
+        if (flagDOWN == false) {
+            if (checked == false) {
+                Toast.makeText(this, "First Select a Button", Toast.LENGTH_LONG).show();
+            } else {
+
+                if (Button == fina) {
+                    Toast.makeText(this, "RIGHT", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(this, "WRONG", Toast.LENGTH_LONG).show();
+                }
+
+                radio.clearCheck();
+
+                Button = -1;
+                fina = -2;
+                int n;
+                do {
+                    Random rand = new Random();
+                    n = rand.nextInt(named.size());
+                } while (n == temp);
+                temp = n;
+                setup(n);
+            }
+
+        }
     }
-
-
 
 
     @Override
@@ -263,8 +370,11 @@ public class Guess extends AppCompatActivity {
         addition();
         textView = (TextView) findViewById(R.id.textView);
         imageView = (ImageView) findViewById(R.id.imageView2);
-        setImage(0);
-
+        radio = (RadioGroup) findViewById(R.id.radioGroup);
+        Random rand = new Random();
+        int n = rand.nextInt(named.size());
+        temp = n;
+        setup(n);
 
     }
 }
