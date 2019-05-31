@@ -25,10 +25,118 @@ public class Guess extends AppCompatActivity {
 
     ArrayList<String> imaged = new ArrayList();
     ArrayList<String> named = new ArrayList();
+    ArrayList<String> name2d = new ArrayList();
+    ArrayList<String> name3d = new ArrayList();
+    ArrayList<String> name4d = new ArrayList();
 
     ImageView imageView;
     EditText editText;
     int temp = 0;
+
+    public void addition(){
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Robert_Downey%2C_Jr._SDCC_2014_%28cropped%29.jpg/220px-Robert_Downey%2C_Jr._SDCC_2014_%28cropped%29.jpg");
+        named.add("Robert Downey Jr.");
+        name2d.add("Tony Stark");
+        name3d.add("Iron Man");
+
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Chris_Evans_SDCC_2014.jpg/220px-Chris_Evans_SDCC_2014.jpg");
+        named.add("Chris Evans");
+        name2d.add("Steve Rogers");
+        name3d.add("Captain America");
+
+
+        imaged.add("https://i.pinimg.com/originals/10/77/af/1077af4642ed60747ae2691c3e7a64ca.jpg");
+        named.add("Chris Hemsworth");
+        name2d.add("Thor Odinson");
+        name3d.add("God of Thunder");
+
+
+        imaged.add("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE4MDAzNDEwNzkxOTI1MjYy/scarlett-johansson-13671719-1-402.jpg");
+        named.add("Scarlett Johansson");
+        name2d.add("Natasha Romanoff");
+        name3d.add("Black Widow");
+
+
+        imaged.add("https://m.media-amazon.com/images/M/MV5BOTk2NDc2ODgzMF5BMl5BanBnXkFtZTcwMTMzOTQ4Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg");
+        named.add("Jeremy Renner");
+        name2d.add("Clint Barton");
+        name3d.add("Hawkeye");
+
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mark_Ruffalo_in_2017_by_Gage_Skidmore.jpg/220px-Mark_Ruffalo_in_2017_by_Gage_Skidmore.jpg");
+        named.add("Mark Ruffalo");
+        name2d.add("Bruce Banner");
+        name3d.add("Hulk");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Benedict_Cumberbatch_by_Gage_Skidmore.jpg/220px-Benedict_Cumberbatch_by_Gage_Skidmore.jpg");
+        named.add("Benedict Cumberbatch");
+        name2d.add("Dr. Stephen Strange");
+        name3d.add("Doctor Strange");
+
+
+
+        imaged.add("https://www.aceshowbiz.com/images/wennpic/preview/anthony-mackie-premiere-black-or-white-01.jpg");
+        named.add("Anthony Mackie");
+        name2d.add("Sam Wilson");
+        name3d.add("Falcon");
+
+
+        imaged.add("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU0ODc4NDQ5OTM5MzkyMTkz/gettyimages-931925994-square.jpg");
+        named.add("Chadwick Boseman");
+        name2d.add("King T'Chala");
+        name3d.add("Black Panther");
+
+
+        imaged.add("https://www.famousbirthdays.com/headshots/sebastian-stan-9.jpg");
+        named.add("Sebastian Stan");
+        name2d.add("Bucky Barnes");
+        name3d.add("Winter Soldier");
+
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Captain_Marvel_trailer_at_the_National_Air_and_Space_Museum_2_%28cropped%29.jpg/220px-Captain_Marvel_trailer_at_the_National_Air_and_Space_Museum_2_%28cropped%29.jpg");
+        named.add("Brie Larson");
+        name2d.add("Carol Danvers");
+        name3d.add("Captain Marvel");
+
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Elizabeth_Olsen_SDCC_2014_2_%28cropped%29.jpg/220px-Elizabeth_Olsen_SDCC_2014_2_%28cropped%29.jpg");
+        named.add("Elizabeth Olsen");
+        name2d.add("Wanda Maximoff");
+        name3d.add("Scarlett Witch");
+
+        imaged.add("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ4MTUwOTQyMDE1OTU2Nzk4/tom-holland-photo-jason-kempin-getty-images-801510482-profile.jpg");
+        named.add("Tom Holland");
+        name2d.add("Peter Parker");
+        name3d.add("Spiderman");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Tom_Hiddleston_%2827992938324%29_%28cropped%29.jpg/220px-Tom_Hiddleston_%2827992938324%29_%28cropped%29.jpg");
+        named.add("Tom Hiddleston");
+        name2d.add("Loki");
+        name3d.add("God of Mischief");
+
+        imaged.add("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQxMDA4Nzk5MDIzNTA2NjE1/chris--pratt-gettyimages-452625304_1350jpg.jpg");
+        named.add("Chris Pratt");
+        name2d.add("Peter Quill");
+        name3d.add("Star Lord");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/VinDieselMarch09.jpg/220px-VinDieselMarch09.jpg");
+        named.add("Vin Deisel");
+        name2d.add("Groot");
+        name3d.add("Tree");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Zoe_Saldana_by_Gage_Skidmore_2.jpg/220px-Zoe_Saldana_by_Gage_Skidmore_2.jpg");
+        named.add("Zoe Saldana");
+        name2d.add("Gamora");
+        name3d.add("Thanos Adopted Daughter");
+
+
+
+
+
+
+    }
 
     public class ImageDownloader extends AsyncTask<String, Void, Bitmap> {
         @Override
@@ -63,28 +171,7 @@ public class Guess extends AppCompatActivity {
     }
 
     public void check(View view) {
-        try {
-
-            String namee = named.get(temp);
-            if((editText.getText().toString()).equals(""))
-            {
-                Toast.makeText(this, "Type the name in Name Bar", Toast.LENGTH_SHORT).show();
-            }
-            else{
-                if ((editText.getText().toString()).equalsIgnoreCase(namee))
-                {
-                    Toast.makeText(this, "YUPP, You are right!", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    Toast.makeText(this, "Nope. Correct answer: " + namee, Toast.LENGTH_LONG).show();
-                }
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        Toast.makeText(this, named.get(temp), Toast.LENGTH_LONG).show();
     }
 
     public void refresh(View view) {
@@ -97,52 +184,8 @@ public class Guess extends AppCompatActivity {
         setImage(n);
     }
 
-    public void pattern(String name) {
-      //  Pattern p = Pattern.compile("<img src=\"(.*?)\" alt");
-        Pattern p = Pattern.compile("<img src=\"(.*?)\" data-src-x2");
-        Matcher m = p.matcher(name);
 
-        while (m.find()) {
-            imaged.add(m.group(1));
-        }
 
-       // Pattern p2 = Pattern.compile("alt=\"(.*?)\"/>");
-        Pattern p2 = Pattern.compile("<div class=\"media-body media-vertical-align\">\n" + "<h4>(.*?)</h4>");
-        Matcher m2 = p2.matcher(name);
-
-        while (m2.find()) {
-            named.add(m2.group(1));
-        }
-
-    }
-
-    public class DownloadTask extends AsyncTask<String, Void, String> {
-
-        @Override
-        protected String doInBackground(String... string) {
-            String result = "";
-            URL url;
-            HttpURLConnection urlConnection = null;
-
-            try {
-                url = new URL(string[0]);
-                urlConnection = (HttpURLConnection) url.openConnection();
-                InputStream in = urlConnection.getInputStream();
-                InputStreamReader reader = new InputStreamReader(in);
-                int data = reader.read();
-
-                while (data != -1) {
-                    char current = (char) data;
-                    result += current;
-                    data = reader.read();
-                }
-                return result;
-            } catch (Exception e) {
-                e.printStackTrace();
-                return "FAILED";
-            }
-        }
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,20 +193,16 @@ public class Guess extends AppCompatActivity {
         setContentView(R.layout.activity_guess);
         getSupportActionBar().hide();
 
-        DownloadTask task = new DownloadTask();
         String result = null;
 
-        editText = (EditText) findViewById(R.id.editText);
 
+        addition();
+
+
+        editText = (EditText) findViewById(R.id.editText);
         imageView = (ImageView) findViewById(R.id.imageView2);
 
-        try {
-            result = task.execute("https://m.imdb.com/title/tt4154796/fullcredits/cast").get();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-        pattern(result);
         setImage(0);
         Log.i("Result : ", result);
 

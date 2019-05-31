@@ -8,12 +8,12 @@
         tools:context=".Guess">
 
     <ImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:id="@+id/imageView2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="150dp"
-            android:layout_marginStart="120dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="50dp"
+            android:layout_marginStart="60dp"
             android:scaleType="fitXY" android:visibility="visible"/>
     <EditText
             android:layout_width="382dp"
