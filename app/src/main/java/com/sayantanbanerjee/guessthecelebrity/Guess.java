@@ -192,19 +192,11 @@ public class Guess extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guess);
         getSupportActionBar().hide();
-
-        String result = null;
-
-
         addition();
-
-
         editText = (EditText) findViewById(R.id.editText);
         imageView = (ImageView) findViewById(R.id.imageView2);
-
-
         setImage(0);
-        Log.i("Result : ", result);
+
 
     }
 }
