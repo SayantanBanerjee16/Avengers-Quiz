@@ -8,9 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.*;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -31,7 +29,41 @@ public class Guess extends AppCompatActivity {
 
     ImageView imageView;
     EditText editText;
+    TextView textView;
+    boolean checked;
     int temp = 0;
+
+    public void radioButtonCheck(View view){
+        checked = ((RadioButton) view).isChecked();
+
+        if(checked == false)
+        {
+            Toast.makeText(this,"First Select a Button",Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            switch(view.getId())
+            {
+                case R.id.radioButton:
+
+                    break;
+
+                case R.id.radioButton2:
+
+                    break;
+
+                case R.id.radioButton3:
+
+                    break;
+
+                case R.id.radioButton4:
+
+                    break;
+            }
+        }
+
+
+    }
 
     public void addition(){
 
@@ -193,7 +225,7 @@ public class Guess extends AppCompatActivity {
         setContentView(R.layout.activity_guess);
         getSupportActionBar().hide();
         addition();
-        editText = (EditText) findViewById(R.id.editText);
+        textView = (TextView) findViewById(R.id.textView);
         imageView = (ImageView) findViewById(R.id.imageView2);
         setImage(0);
 

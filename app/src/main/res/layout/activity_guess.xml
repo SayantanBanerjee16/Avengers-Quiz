@@ -8,50 +8,107 @@
         tools:context=".Guess">
 
     <ImageView
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="300dp"
             android:id="@+id/imageView2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="50dp"
-            android:layout_marginStart="60dp"
-            android:scaleType="fitXY" android:visibility="visible"/>
-    <EditText
-            android:layout_width="382dp"
-            android:layout_height="45dp"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
-            android:layout_marginTop="80dp" app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            android:hint="Enter the actor/actress name"/>
+            android:layout_marginStart="85dp"
+            android:scaleType="centerCrop" android:visibility="visible"/>
+
     <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="395dp"
-            android:layout_height="113dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:layout_marginTop="0dp" app:layout_constraintTop_toBottomOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent">
-        <Button
-                android:text="REFRESH"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/linearLayout">
+
+        <RadioGroup
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:id="@+id/radioGroup">
+
+
+            <RadioButton
+                    android:text="RadioButton one"
+                    android:autoSizeTextType="uniform"
+                    android:checked="false"
+                    android:onClick="radioButtonCheck"
+                    android:padding="5dp"
+                    android:textSize="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/radioButton"/>
+            <RadioButton
+                    android:text="RadioButton two"
+                    android:layout_width="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:onClick="radioButtonCheck"
+                    android:textSize="30sp"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="420dp"
+                    tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton2"
+            />
+            <RadioButton
+                    android:text="RadioButton three"
+                    android:autoSizeTextType="uniform"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:onClick="radioButtonCheck"
+                    android:textSize="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
+                    tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton3"/>
+
+            <RadioButton
+                    android:text="RadioButton four"
+                    android:checked="false"
+                    android:autoSizeTextType="uniform"
+                    android:onClick="radioButtonCheck"
+                    android:textSize="30sp"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
+                    tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton4"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="395dp"
+            android:layout_height="118dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+                android:text="NEXT"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:id="@+id/button"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="100dp"
                 android:textSize="30sp"
+
                 android:textColor="#FFFFFF"
                 android:background="#EB0606"
                 android:textStyle="bold|italic"
-                android:onClick="refresh"
-                android:gravity="center"
-                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
-        <Button
-                android:text="CHECK"
-                android:layout_width="wrap_content"
-                android:layout_margin="10dp"
-                android:background="#EB0606"
-                android:onClick="check"
-                android:textSize="30sp"
-                android:textColor="#FFFFFF"
-                android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"
-                android:textStyle="bold|italic" android:textAllCaps="true"/>
+
+                android:onClick="refresh"/>
     </LinearLayout>
+    <TextView
+            android:text="Which character this actor/actress play?"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="385dp" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp" android:typeface="sans" android:fontFamily="sans-serif-medium"
+            android:textStyle="bold" android:textAlignment="center"/>
+
+
 </android.support.constraint.ConstraintLayout>
