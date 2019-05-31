@@ -163,6 +163,42 @@ public class Guess extends AppCompatActivity {
         name2d.add("Gamora");
         name3d.add("Thanos Adopted Daughter");
 
+        imaged.add("http://2.bp.blogspot.com/-vpUB2YAnZU4/VlWXrea2MLI/AAAAAAAAAEg/xrse6V2injg/s320/Nick.jpg");
+        named.add("Samuel L Jackson");
+        name2d.add("Nick Fury");
+        name3d.add("Director of S.H.I.E.L.D.");
+
+        imaged.add("https://i.pinimg.com/originals/d2/10/bc/d210bc78e422d4477b00b94ca5261f83.jpg");
+        named.add("Cobie Smulders");
+        name2d.add("Maria Hill");
+        name3d.add("Agent of S.H.I.E.L.D.");
+
+        imaged.add("https://pixel.nymag.com/imgs/daily/vulture/2016/04/11/11-tessa-thompson.w330.h330.jpg");
+        named.add("Tessa Thompson");
+        name2d.add("Brunnhilde");
+        name3d.add("Valkyrie");
+
+        imaged.add("https://i.redd.it/pnyt4x0v29pz.png");
+        named.add("Don Cheadle");
+        name2d.add("James Rupert Rhodes");
+        name3d.add("War Machine");
+
+        imaged.add("https://66.media.tumblr.com/aa6bc4da874e75170829c2751c92ecd7/tumblr_p93oja0S7i1wr1mryo5_250.png");
+        named.add("Paul Rudd");
+        name2d.add("Scott Lang");
+        name3d.add("Ant Man");
+
+
+        imaged.add("https://www.famousbirthdays.com/headshots/karen-gillan-1.jpg");
+        named.add("Karen Gillian");
+        name2d.add("Nebula");
+        name3d.add("Adopted daughter of Thanos");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GwynethPaltrowByAndreaRaffin2011.jpg/220px-GwynethPaltrowByAndreaRaffin2011.jpg");
+        named.add("Gwyneth Paltrow");
+        name2d.add("Pepper Potts");
+        name3d.add("Tony Stark's Wife");
+
 
 
 
