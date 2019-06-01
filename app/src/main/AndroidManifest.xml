@@ -11,6 +11,10 @@
             android:roundIcon="@drawable/avengerspng"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Winner">
+        </activity>
+        <activity android:name=".HomeScreen">
+        </activity>
         <activity android:name=".Guess">
         </activity>
         <activity android:name=".MainActivity">

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar!!.hide()
         Handler().postDelayed({
 
-            val intent = Intent(this,Guess::class.java)
+            val intent = Intent(this,HomeScreen::class.java)
             startActivity(intent)
             this.finish()
         },1500);

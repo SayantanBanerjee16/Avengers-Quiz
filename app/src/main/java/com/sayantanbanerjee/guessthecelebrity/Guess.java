@@ -1,9 +1,11 @@
 package com.sayantanbanerjee.guessthecelebrity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.Image;
 import android.os.AsyncTask;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,7 +30,7 @@ public class Guess extends AppCompatActivity {
 
 
     RadioGroup radio;
-
+    String playerName;
     ImageView imageView;
     EditText editText;
     TextView textView;
@@ -37,6 +39,13 @@ public class Guess extends AppCompatActivity {
     boolean flagDOWN = true;
     int temp = 0;
     int fina = -2;
+    int counter = 0;
+    int correct = 0;
+    Button button;
+
+    public void abc(){
+
+    }
 
     public int Rand1() {
         Random rand = new Random();
@@ -414,26 +423,52 @@ public class Guess extends AppCompatActivity {
 
         if (flagDOWN == false) {
             if (checked == false) {
-                Toast.makeText(this, "First Select a Button", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "First Select a Button", Toast.LENGTH_SHORT).show();
             } else {
 
                 if (Button == fina) {
-                    Toast.makeText(this, "RIGHT", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "RIGHT", Toast.LENGTH_SHORT).show();
+                    correct++;
                 } else {
-                    Toast.makeText(this, "WRONG", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
                 }
 
-                radio.clearCheck();
 
-                Button = -1;
-                fina = -2;
-                int n;
-                do {
-                    Random rand = new Random();
-                    n = rand.nextInt(named.size());
-                } while (n == temp);
-                temp = n;
-                setup(n);
+
+                if(counter != 10)
+                {
+                    counter++;
+                }
+
+                if(counter == 9)
+                {
+                     button.setText("FINISH");
+                }
+
+
+                if(counter == 10)
+                {
+                    abc();
+                    Intent intent = new Intent(this, Winner.class);
+                    intent.putExtra("playerName", playerName);
+                    intent.putExtra("correct", correct);
+                    startActivity(intent);
+                    this.finish();
+                }
+                else
+                {
+                    radio.clearCheck();
+                    Button = -1;
+                    fina = -2;
+                    int n;
+                    do {
+                        Random rand = new Random();
+                        n = rand.nextInt(named.size());
+                    } while (n == temp);
+                    temp = n;
+                    setup(n);
+                }
+
             }
 
         }
@@ -444,8 +479,14 @@ public class Guess extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guess);
+
+        Intent startingIntent = getIntent();
+        playerName = startingIntent.getStringExtra("message");
+        counter = 0;
+        correct = 0;
         getSupportActionBar().hide();
         addition();
+        button = (Button) findViewById(R.id.button);
         textView = (TextView) findViewById(R.id.textView);
         imageView = (ImageView) findViewById(R.id.imageView2);
         radio = (RadioGroup) findViewById(R.id.radioGroup);

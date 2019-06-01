@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@drawable/backg"
+        android:alpha="0.9"
+        android:layout_height="match_parent"
+        tools:context=".HomeScreen">
+
+    <TextView
+            android:text="MARVEL QUIZ"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:textColor="#045FEC"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:id="@+id/textView2" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"/>
+    <EditText
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="30sp"
+            android:hint="Enter Your Name Here"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:id="@+id/editText" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="140dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="18dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="18dp"/>
+    <TextView
+            android:text="This QUIZ comprises of 10 question. Each question would be having a picture of actor/actress. Based on the picture and question asked, you have to choose from the four given options and press on NEXT button to proceed."
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:textColor="#004A92"
+            android:textSize="30sp"
+            android:id="@+id/textView3" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="250dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"/>
+    <Button
+            android:text="TAP TO START QUIZ"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#FF0000"
+            android:onClick="button"
+            android:background="#FFFFFF"
+            android:id="@+id/button2" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="600dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="110dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="110dp"/>
+</android.support.constraint.ConstraintLayout>
