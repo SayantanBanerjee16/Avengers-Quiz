@@ -7,8 +7,8 @@
     <application
             android:allowBackup="true"
             android:icon="@drawable/avengerspng"
-            android:label="Guess the Avenger!"
-            android:roundIcon="@drawable/avengerspng"
+            android:label="Avengers Quiz!"
+            android:roundIcon="@drawable/backg"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".Winner">
