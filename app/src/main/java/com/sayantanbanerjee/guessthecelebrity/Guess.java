@@ -40,19 +40,19 @@ public class Guess extends AppCompatActivity {
 
     public int Rand1() {
         Random rand = new Random();
-        int a = rand.nextInt(8);
+        int a = rand.nextInt(13);
         return a;
     }
 
     public int Rand2() {
         Random rand = new Random();
-        int a = rand.nextInt(8) + 8;
+        int a = rand.nextInt(13) + 13;
         return a;
     }
 
     public int Rand3() {
         Random rand = new Random();
-        int a = rand.nextInt(8) + 16;
+        int a = rand.nextInt(13) + 26;
         return a;
     }
 
@@ -165,6 +165,11 @@ public class Guess extends AppCompatActivity {
         name2d.add("Wanda Maximoff");
         name3d.add("Scarlett Witch");
 
+        imaged.add("https://www.famousbirthdays.com/faces/russo-rene-image.jpg");
+        named.add("Rene Russo");
+        name2d.add("Frigga");
+        name3d.add("Queen of Asgard");
+
         imaged.add("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ4MTUwOTQyMDE1OTU2Nzk4/tom-holland-photo-jason-kempin-getty-images-801510482-profile.jpg");
         named.add("Tom Holland");
         name2d.add("Peter Parker");
@@ -225,6 +230,79 @@ public class Guess extends AppCompatActivity {
         named.add("Gwyneth Paltrow");
         name2d.add("Pepper Potts");
         name3d.add("Tony Stark's Wife");
+
+        imaged.add("https://ficquotes.com/images/characters/jane-foster.jpg");
+        named.add("Natalie Portman");
+        name2d.add("Jane Foster");
+        name3d.add("Love Interest of Thor");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cate_Blanchett_2011.jpg/191px-Cate_Blanchett_2011.jpg");
+        named.add("Cate Blanchett");
+        name2d.add("Hela");
+        name3d.add("Goddess of Death");
+
+        imaged.add("https://pixel.nymag.com/imgs/daily/vulture/2018/06/20/20-josh-brolin.w330.h330.jpg");
+        named.add("Josh Brolin");
+        name2d.add("Thanos");
+        name3d.add("Mad Titan");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Glasto17-44_%2835547413626%29_Cropped.jpg/220px-Glasto17-44_%2835547413626%29_Cropped.jpg");
+        named.add("Bradley Cooper");
+        name2d.add("Rocket");
+        name3d.add("Racoon");
+
+        imaged.add("https://notednames.com/ImgProfile/a@@h_Evangeline%20Lilly.jpg");
+        named.add("Evangeline Lilly");
+        name2d.add("Hope Pym");
+        name3d.add("Mother of Wasp");
+
+        imaged.add("https://frostsnow.com//uploads/biography/2018/04/04/ty-simpkins.jpg");
+        named.add("Ty Simpkins");
+        name2d.add("Harley");
+        name3d.add("Kid from Iron Man 3");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Jon_Favreau_2016.jpeg/220px-Jon_Favreau_2016.jpeg");
+        named.add("Jon Favreau");
+        name2d.add("Happy Hogan");
+        name3d.add("Tony Stark bodyguard & chauffeur");
+
+        imaged.add("https://m.media-amazon.com/images/M/MV5BMTUzNjI0Njc5NF5BMl5BanBnXkFtZTYwOTM2MjYz._V1_UX214_CR0,0,214,317_AL_.jpg");
+        named.add("Michelle Pfeiffer");
+        name2d.add("Janet van Dyne");
+        name3d.add("Wasp");
+
+        imaged.add("https://pixel.nymag.com/imgs/daily/vulture/2019/02/08/08-danai-gurira.w330.h330.jpg");
+        named.add("Danai Gurira");
+        name2d.add("Okoye");
+        name3d.add("Member of the Dora Milaje");
+
+        imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Benedict_Wong_by_Gage_Skidmore.jpg/266px-Benedict_Wong_by_Gage_Skidmore.jpg");
+        named.add("Benedict Wong");
+        name2d.add("Wong");
+        name3d.add("Chinese Monk of Kamar-Taj");
+
+        imaged.add("https://images3.static-bluray.com/products/22/25133_1_front.jpg");
+        named.add("Emma Fuhrmann");
+        name2d.add("Cassie Lang");
+        name3d.add("Daughter of Ant Man");
+
+        imaged.add("https://m.media-amazon.com/images/M/MV5BMjI4NjQ5NDA5M15BMl5BanBnXkFtZTgwNDE0MjQzMjE@._V1_UY317_CR142,0,214,317_AL_.jpg");
+        named.add("Dave Bautista");
+        name2d.add("Arthur Douglas");
+        name3d.add("Drax The Destroyer");
+
+        imaged.add("https://m.media-amazon.com/images/M/MV5BMzc5ZjRhNTItMTM5MS00ZDIxLTk4MzYtYzZkZDBhMjE1ZjMwXkEyXkFqcGdeQXVyNTEwNTA1Njg@._V1_UY317_CR79,0,214,317_AL_.jpg");
+        named.add("Winston Duke");
+        name2d.add("M'Baku");
+        name3d.add("Leader of Jabari Tribe");
+
+        imaged.add("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU2MDExMzA1MDA4ODk5ODI0/gettyimages-9179665520-cropped.jpg");
+        named.add("Letitia Wright");
+        name2d.add("Shuri");
+        name3d.add("Sister of Black Panther");
+
+
+        //upto 39
 
 
     }
