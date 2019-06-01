@@ -52,7 +52,18 @@
             android:onClick="button"
             android:background="#FFFFFF"
             android:id="@+id/button2" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="600dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="550dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="110dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="110dp"/>
+    <TextView
+            android:text="To All Marvel Fans By Sayantan Banerjee"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#310303"
+            android:textSize="20sp"
+            android:id="@+id/textView5" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="660dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="21dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="21dp"/>
 </android.support.constraint.ConstraintLayout>
