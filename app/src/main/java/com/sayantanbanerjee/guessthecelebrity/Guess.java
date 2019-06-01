@@ -27,6 +27,7 @@ public class Guess extends AppCompatActivity {
     ArrayList<String> name2d = new ArrayList();
     ArrayList<String> name3d = new ArrayList();
     ArrayList<String> nametemp = new ArrayList();
+    ArrayList<Integer> used = new ArrayList();
 
 
     RadioGroup radio;
@@ -419,6 +420,17 @@ public class Guess extends AppCompatActivity {
         nametemp.clear();
     }
 
+    public boolean check(int n){
+        boolean a = false;
+        for (Integer i : used)
+        {
+            if(i == n){
+                a = true;
+            }
+        }
+        return a;
+    }
+
     public void refresh(View view) {
 
         if (flagDOWN == false) {
@@ -464,8 +476,9 @@ public class Guess extends AppCompatActivity {
                     do {
                         Random rand = new Random();
                         n = rand.nextInt(named.size());
-                    } while (n == temp);
+                    } while (check(n));
                     temp = n;
+                    used.add(n);
                     setup(n);
                 }
 
@@ -479,7 +492,7 @@ public class Guess extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guess);
-
+        used.clear();
         Intent startingIntent = getIntent();
         playerName = startingIntent.getStringExtra("message");
         counter = 0;
@@ -493,6 +506,7 @@ public class Guess extends AppCompatActivity {
         Random rand = new Random();
         int n = rand.nextInt(named.size());
         temp = n;
+        used.add(temp);
         setup(n);
 
     }
