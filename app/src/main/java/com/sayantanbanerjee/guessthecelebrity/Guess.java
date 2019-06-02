@@ -203,7 +203,7 @@ public class Guess extends AppCompatActivity {
         imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Zoe_Saldana_by_Gage_Skidmore_2.jpg/220px-Zoe_Saldana_by_Gage_Skidmore_2.jpg");
         named.add("Zoe Saldana");
         name2d.add("Gamora");
-        name3d.add("Thanos Adopted Daughter");
+        name3d.add("Peter Quill Girlfriend");
 
         imaged.add("http://2.bp.blogspot.com/-vpUB2YAnZU4/VlWXrea2MLI/AAAAAAAAAEg/xrse6V2injg/s320/Nick.jpg");
         named.add("Samuel L Jackson");
@@ -234,7 +234,7 @@ public class Guess extends AppCompatActivity {
         imaged.add("https://www.famousbirthdays.com/headshots/karen-gillan-1.jpg");
         named.add("Karen Gillian");
         name2d.add("Nebula");
-        name3d.add("Adopted daughter of Thanos");
+        name3d.add("Blue skinned,Adopted Daughter of Thanos");
 
         imaged.add("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/GwynethPaltrowByAndreaRaffin2011.jpg/220px-GwynethPaltrowByAndreaRaffin2011.jpg");
         named.add("Gwyneth Paltrow");
@@ -416,6 +416,7 @@ public class Guess extends AppCompatActivity {
         button3.setText(nametemp.get(2));
         RadioButton button4 = (RadioButton) findViewById(R.id.radioButton4);
         button4.setText(nametemp.get(3));
+
 
         nametemp.clear();
     }

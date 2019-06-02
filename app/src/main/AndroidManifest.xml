@@ -12,13 +12,17 @@
             android:roundIcon="@drawable/backg"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Winner">
+        <activity android:name=".Winner"
+        android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".HomeScreen">
+        <activity android:name=".HomeScreen"
+        android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Guess">
+        <activity android:name=".Guess"
+        android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+        android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
