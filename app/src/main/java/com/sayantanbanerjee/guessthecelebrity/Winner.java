@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 public class Winner extends AppCompatActivity {
 
-    String playerName,abc;
+    String playerName,player;
 
     int Winner;
     TextView text;
 
-    public void abc(){
+    public void player2(){
         Intent intent = new Intent(this, HomeScreen.class);
         startActivity(intent);
         this.finish();
@@ -30,7 +30,7 @@ public class Winner extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                abc();
+                player2();
             }
         }.start();
 
@@ -47,9 +47,18 @@ public class Winner extends AppCompatActivity {
         Winner = startingIntent.getIntExtra("correct",0);
         text = (TextView) findViewById(R.id.textView4);
 
-        abc = playerName.toUpperCase();
+        player = playerName.toUpperCase();
 
-        text.setText(abc + "\n scored \n" + Winner + " correct out of 10.");
+        if(player.length()< 25){
+            text.setText(player + "\n scored \n" + Winner + " correct out of 10.");    
+        }
+        else
+        {
+            player = player.substring(0, 25);
+            player += "...";
+            text.setText(player + "\n scored \n" + Winner + " correct out of 10.");
+            
+        }
         text.animate().alpha(1f).setDuration(1000);
     }
 }
