@@ -9,61 +9,89 @@
         android:layout_height="match_parent"
         tools:context=".HomeScreen">
 
-    <TextView
-            android:text="MARVEL QUIZ"
-            android:textSize="60sp"
-            android:gravity="center"
-            android:textColor="#045FEC"
-            android:layout_width="380dp"
-            android:layout_height="wrap_content"
-            android:textStyle="bold|italic"
-            android:id="@+id/textView2" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="15dp"/>
-    <EditText
-            android:layout_width="385dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:textSize="30sp"
-            android:hint="Enter Your Name Here"
-            android:textColorHint="#FFFFFF"
-            android:textColor="#FFFFFF"
-            android:id="@+id/editText" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="140dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="18dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="18dp"/>
-    <TextView
-            android:text="This QUIZ comprises of 10 question. Each question would be having a picture of actor/actress. Based on the picture and question asked, you have to choose from the four given options and press on NEXT button to proceed. \n Note : INTERNET CONNECTION REQUIRED."
-            android:layout_width="385dp"
-            android:layout_height="wrap_content"
-            android:textColor="#004A92"
-            android:textSize="30sp"
-            android:id="@+id/textView3" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="220dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="10dp"/>
-    <Button
-            android:text="TAP TO START QUIZ"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:textColor="#FF0000"
-            android:onClick="button"
-            android:background="#FFFFFF"
-            android:id="@+id/button2" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="600dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="110dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="110dp"/>
-    <TextView
-            android:text="To All Marvel Fans By Sayantan Banerjee"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="#310303"
-            android:textSize="20sp"
-            android:id="@+id/textView5" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="680dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="21dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="21dp"/>
+    <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:text="MARVEL QUIZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#045FEC"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="2"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="30sp"
+                    android:hint="Enter Your Name Here"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/editText"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            <TextView
+                    android:text="This QUIZ comprises of 10 question. Each question would be having a picture of actor/actress. Based on the picture and question asked, you have to choose from the four given options and press on NEXT button to proceed. \n\nNote : INTERNET CONNECTION REQUIRED."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#004A92"
+                    android:textSize="25sp"
+                    android:id="@+id/textView3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+            <Button
+                    android:text="TAP TO START QUIZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="#FF0000"
+                    android:layout_gravity="center"
+                    android:onClick="button"
+                    android:background="#FFFFFF"
+                    android:layout_weight="0"
+                    android:id="@+id/button2"
+                    android:layout_marginTop="30dp"/>
+
+            <TextView
+                    android:text="To All Marvel Fans By Sayantan Banerjee"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#310303"
+                    android:layout_weight="0"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/textView5"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
