@@ -1,104 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".Guess">
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.05"/>
+    <TextView
+            android:text="Which character this actor/actress play?"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:maxLines="2" android:fontFamily="sans-serif-medium"
+            android:textStyle="bold" android:textAlignment="center"
 
-    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
-
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:orientation="vertical">
-
-            <ImageView
-                    android:layout_width="250dp"
-                    android:layout_height="300dp"
-                    android:id="@+id/imageView2"
-                    android:layout_weight="0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="50dp"
-                    android:layout_gravity="center"
-                    android:scaleType="centerCrop" android:visibility="visible"/>
-            <TextView
-                    android:text="Which character this actor/actress play?"
-                    android:layout_width="410dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView"
-                    android:layout_marginTop="20dp"
-                    android:textSize="20sp" android:typeface="sans" android:fontFamily="sans-serif-medium"
-                    android:textStyle="bold" android:textAlignment="center"/>
-            <RadioGroup
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/radioGroup">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"/>
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="0.8">
 
 
-                <RadioButton
-                        android:text="RadioButton one"
-                        android:autoSizeTextType="uniform"
-                        android:checked="false"
-                        android:onClick="radioButtonCheck"
-                        android:padding="5dp"
-                        android:layout_weight="1"
-                        android:textSize="30sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/radioButton"/>
-                <RadioButton
-                        android:text="RadioButton two"
-                        android:layout_width="wrap_content"
-                        android:autoSizeTextType="uniform"
-                        android:checked="false"
-                        android:layout_weight="1"
-                        android:padding="5dp"
-                        android:onClick="radioButtonCheck"
-                        android:textSize="30sp"
-                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="420dp"
-                        tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton2"
-                />
-                <RadioButton
-                        android:text="RadioButton three"
-                        android:autoSizeTextType="uniform"
-                        android:checked="false"
-                        android:padding="5dp"
-                        android:layout_weight="1"
-                        android:onClick="radioButtonCheck"
-                        android:textSize="30sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
-                        tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton3"/>
+        <RadioButton
+                android:text="RadioButton one"
+                android:autoSizeTextType="uniform"
+                android:checked="false"
+                android:onClick="radioButtonCheck"
+                android:padding="5dp"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioButton"/>
+        <RadioButton
+                android:text="RadioButton two"
+                android:layout_width="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:checked="false"
+                android:padding="5dp"
+                android:onClick="radioButtonCheck"
+                android:textSize="30dp"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="420dp"
+                tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton2"
+        />
+        <RadioButton
+                android:text="RadioButton three"
+                android:autoSizeTextType="uniform"
+                android:checked="false"
+                android:padding="5dp"
+                android:onClick="radioButtonCheck"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
+                tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton3"/>
 
-                <RadioButton
-                        android:text="RadioButton four"
-                        android:checked="false"
-                        android:autoSizeTextType="uniform"
-                        android:onClick="radioButtonCheck"
-                        android:textSize="30sp"
-                        android:padding="5dp"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
-                        tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton4"/>
-            </RadioGroup>
+        <RadioButton
+                android:text="RadioButton four"
+                android:checked="false"
+                android:autoSizeTextType="uniform"
+                android:onClick="radioButtonCheck"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
+                tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton4"/>
+    </RadioGroup>
 
-            <Button
-                    android:text="NEXT"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button"
-                    android:layout_marginTop="20dp"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    android:textColor="#FFFFFF"
-                    android:background="#EB0606"
-                    android:textStyle="bold|italic"
-                    android:onClick="refresh"/>
-
-        </LinearLayout>
-    </RelativeLayout>
-
+    <Button
+            android:text="NEXT"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:background="#EB0606"
+            android:textStyle="bold|italic"
+            android:onClick="refresh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.95"/>
 
 </android.support.constraint.ConstraintLayout>
