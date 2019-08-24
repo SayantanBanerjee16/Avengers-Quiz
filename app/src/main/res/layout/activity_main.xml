@@ -13,7 +13,7 @@
                     android:text="GUESS THE"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="0dp" android:textSize="40sp"
+                    android:padding="0dp" android:textSize="40dp"
                     android:textStyle="bold|italic"
                     android:layout_marginTop="50dp"
                     android:textAlignment="center"/>
@@ -25,14 +25,13 @@
                 android:scaleX="1.2"
                 android:background="@drawable/avengerspng"
                 android:id="@+id/imageView"
-
                 android:layout_weight="3"
-                android:scaleType="fitXY"/>
+                android:scaleType="centerCrop"/>
             <TextView
                     android:text="MARVEL CHARACTER"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="0dp" android:textSize="35sp"
+                    android:padding="0dp" android:textSize="35dp"
                     android:layout_marginBottom="50dp"
                     android:textStyle="bold|italic"
                     android:textAlignment="center"/>
