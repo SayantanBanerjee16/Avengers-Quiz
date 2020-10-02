@@ -5,3 +5,4 @@ Each question comprises of 4 option and the user have to guess the right MCU cha
 Sayantan , do you know , Gods of death , love apples
 Do you agree ?
 That Kira was a god
+Black cat forever
