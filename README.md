@@ -6,6 +6,5 @@ Sayantan , do you know , Gods of death , love apples
 Do you agree ?
 That Kira was a god
 Black cat forever
-..
-Wakanda for me. 
+.. 
 Marvel quiz and updates. 
