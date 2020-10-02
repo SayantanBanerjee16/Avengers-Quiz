@@ -8,4 +8,4 @@ That Kira was a god
 Black cat forever
 ..
 Wakanda for me. 
-Marvel Updates.
+Marvel quiz and updates. 
