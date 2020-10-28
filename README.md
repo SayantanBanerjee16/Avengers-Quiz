@@ -11,3 +11,4 @@ The quiz will contain pictures of MCU characters...
 If  you are in love with marvel universe you should attempt this quiz atleast once.
 If you are able to give all answers correct the developer of this app have some exciting prizes ready for you.
 You can play this quiz only once.
+The developer of this quiz is going to develop more quizes like this in future too..
