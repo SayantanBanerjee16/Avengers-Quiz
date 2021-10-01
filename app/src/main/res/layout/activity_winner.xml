@@ -15,26 +15,28 @@
                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintBottom_toBottomOf="parent"
                app:layout_constraintHorizontal_bias="0.5"
-               app:layout_constraintVertical_bias="0.5"/>
+               app:layout_constraintVertical_bias="0.5"
+            android:contentDescription="@string/todo" />
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ANURAG \nscored\n7 correct out of 10."
+            android:text="@string/winner"
             android:textColor="#FFFFFF"
-            android:textSize="50dp"
+            android:textSize="50sp"
             android:textStyle="bold"
             android:gravity="center"
             android:id="@+id/textView4"
             android:layout_gravity="center"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.3"/>
+            app:layout_constraintVertical_bias="0.3" />
 
     <Button
-            android:text="GO TO HOME SCREEN"
+            android:text="@string/go_to_home_screen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
