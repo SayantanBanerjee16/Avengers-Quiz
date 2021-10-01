@@ -11,4 +11,11 @@
     <string name="guess_the">GUESS THE</string>
     <string name="marvel_character">MARVEL CHARACTER</string>
     <string name="todo">TODO</string>
+    <string name="next">NEXT</string>
+    <string name="which_character_this_actor_actress_play">Which character this actor/actress play?</string>
+    <string name="radiobutton_one">RadioButton one</string>
+    <string name="radiobutton_three">RadioButton three</string>
+    <string name="radiobutton_two">RadioButton two</string>
+    <string name="todo">TODO</string>
+    <string name="radiobutton_four">RadioButton four</string>
 </resources>
