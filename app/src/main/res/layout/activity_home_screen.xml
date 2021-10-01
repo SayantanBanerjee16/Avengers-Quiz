@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/backg"
@@ -9,27 +10,28 @@
 
 
     <TextView
-            android:text="MARVEL QUIZ"
+            android:text="@string/marvel_quiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="45dp"
+            android:textSize="45sp"
             android:gravity="center"
             android:layout_gravity="center"
             android:textColor="#045FEC"
             android:textStyle="bold"
             android:id="@+id/textView2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.05"/>
+            app:layout_constraintVertical_bias="0.05" />
 
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:textSize="25dp"
-            android:hint="Enter Your Name Here"
+            android:textSize="25sp"
+            android:hint="@string/name_hint"
             android:textColorHint="#FFFFFF"
             android:layout_gravity="center"
             android:gravity="center"
@@ -39,17 +41,21 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.15"/>
+            app:layout_constraintVertical_bias="0.15"
+            android:importantForAutofill="no"
+            android:hintTextColor="#8D6E63"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <TextView
-            android:text="This QUIZ comprises of 10 question. Each question would be having a picture of actor/actress. Based on the picture and question asked, you have to choose from the four given options and press on NEXT button to proceed. \n\nNote : INTERNET CONNECTION REQUIRED."
+            android:text="@string/quiz_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#004A92"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:id="@+id/textView3"
             android:gravity="center"
             android:layout_gravity="center"
@@ -58,16 +64,17 @@
             android:layout_marginLeft="10dp"
             android:padding="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.5"/>
+            app:layout_constraintVertical_bias="0.5" />
 
     <Button
-            android:text="TAP TO START QUIZ"
+            android:text="@string/tap_to_start_quiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:gravity="center"
             android:textColor="#FF0000"
             android:layout_gravity="center"
@@ -83,12 +90,12 @@
             app:layout_constraintVertical_bias="0.9"/>
 
     <TextView
-            android:text="To All Marvel Fans By Sayantan Banerjee"
+            android:text="@string/to_all_marvel_fans_by_sayantan_banerjee"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#310303"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:paddingBottom="6dp"
             android:layout_marginBottom="10dp"
             android:id="@+id/textView5"
