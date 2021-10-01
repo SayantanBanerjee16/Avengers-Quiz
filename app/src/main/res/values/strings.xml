@@ -8,4 +8,7 @@
     <string name="winner">ANURAG \nscored\n7 correct out of 10.</string>
     <string name="todo">TODO</string>
     <string name="go_to_home_screen">GO TO HOME SCREEN</string>
+    <string name="guess_the">GUESS THE</string>
+    <string name="marvel_character">MARVEL CHARACTER</string>
+    <string name="todo">TODO</string>
 </resources>
