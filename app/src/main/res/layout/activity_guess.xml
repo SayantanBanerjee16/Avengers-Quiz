@@ -16,9 +16,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.05"/>
+            app:layout_constraintVertical_bias="0.05"
+            android:contentDescription="@string/todo" />
     <TextView
-            android:text="Which character this actor/actress play?"
+            android:text="@string/which_character_this_actor_actress_play"
             android:layout_width="410dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
@@ -45,50 +46,53 @@
 
 
         <RadioButton
-                android:text="RadioButton one"
+                android:text="@string/radiobutton_one"
                 android:autoSizeTextType="uniform"
                 android:checked="false"
                 android:onClick="radioButtonCheck"
                 android:padding="5dp"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/radioButton"/>
+                android:layout_height="wrap_content" android:id="@+id/radioButton"
+                tools:targetApi="o" />
         <RadioButton
-                android:text="RadioButton two"
+                android:text="@string/radiobutton_two"
                 android:layout_width="wrap_content"
                 android:autoSizeTextType="uniform"
                 android:checked="false"
                 android:padding="5dp"
                 android:onClick="radioButtonCheck"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:layout_height="wrap_content" tools:layout_editor_absoluteY="420dp"
                 tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton2"
-        />
+                tools:targetApi="o" />
         <RadioButton
-                android:text="RadioButton three"
+                android:text="@string/radiobutton_three"
                 android:autoSizeTextType="uniform"
                 android:checked="false"
                 android:padding="5dp"
                 android:onClick="radioButtonCheck"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
-                tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton3"/>
+                tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton3"
+                tools:targetApi="o" />
 
         <RadioButton
-                android:text="RadioButton four"
+                android:text="@string/radiobutton_four"
                 android:checked="false"
                 android:autoSizeTextType="uniform"
                 android:onClick="radioButtonCheck"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:padding="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" tools:layout_editor_absoluteY="465dp"
-                tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton4"/>
+                tools:layout_editor_absoluteX="16dp" android:id="@+id/radioButton4"
+                tools:targetApi="o" />
     </RadioGroup>
 
     <Button
-            android:text="NEXT"
+            android:text="@string/next"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/button"
