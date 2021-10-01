@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GuessTheCelebrity</string>
+    <string name="marvel_quiz">MARVEL QUIZ</string>
+    <string name="name_hint">Enter Your Name Here</string>
+    <string name="quiz_desc">This QUIZ comprises of 10 question. Each question would be having a picture of actor/actress. Based on the picture and question asked, you have to choose from the four given options and press on NEXT button to proceed. \n\nNote : INTERNET CONNECTION REQUIRED.</string>
+    <string name="tap_to_start_quiz">TAP TO START QUIZ</string>
+    <string name="to_all_marvel_fans_by_sayantan_banerjee">To All Marvel Fans By Sayantan Banerjee</string>
 </resources>
