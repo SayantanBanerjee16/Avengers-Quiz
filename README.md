@@ -13,5 +13,4 @@ If you are able to give all answers correct the developer of this app have some 
 You can play this quiz only once.
 The developer of this quiz is going to develop more quizes like this in future too..
 Stay tune in with the app for future refernces..
-Iron man or Cap America ??
 
