@@ -15,3 +15,4 @@ The developer of this quiz is going to develop more quizes like this in future t
 Stay tune in with the app for future refernces.
 
 Language - Java
+Main Author - Sayantan Banerjee
