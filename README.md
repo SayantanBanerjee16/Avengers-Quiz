@@ -14,8 +14,8 @@ You can play this quiz only once.
 The developer of this quiz is going to develop more quizes like this in future too.
 Stay tune in with the app for future refernces.
 
-Language - Java.
+Language - Java
 
-Main Author - Sayantan Banerjee.
+Main Author - Sayantan Banerjee
 
 
