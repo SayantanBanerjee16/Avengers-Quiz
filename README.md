@@ -19,7 +19,7 @@ Built Using -  Android Studio
 
 Main Author - Sayantan Banerjee
 
-College - IIIT Gwalior
+College - TIU Kolkata
 Batch - IPG(B.Tech + M.Tech)
 
 
