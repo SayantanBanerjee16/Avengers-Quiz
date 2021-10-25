@@ -25,5 +25,6 @@ Batch - IPG(B.Tech + M.Tech)
 Contributors :
 
 Mehul Jain, Rashi Gupta, Ankush Halder, Parth Arora, Sanjana Roy, Kaustav Nag, Shreya Gupta, Anurag Srivastava
+biggest contributor here is spyder101..
 
 
