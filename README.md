@@ -17,10 +17,10 @@ Stay tune in with the app for future references.
 Language -  Java
 Built Using -  Android Studio
 
-Main Author -  Sayantan Banerjee
+Main Author -  Sayantan Banerjee.
 
-College - Indian Institute of Information Technology and Management, Gwalior
-Batch - IPG(B.Tech + M.Tech)
+College - Indian Institute of Information Technology and Management, Gwalior.
+Batch - IPG(B.Tech + M.Tech).
 
 Contributors :
 
