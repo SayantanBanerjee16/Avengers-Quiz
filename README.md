@@ -25,10 +25,5 @@ Batch - IPG(B.Tech + M.Tech)
 Contributors :
 
 Mehul Jain, Rashi Gupta, Ankush Halder, Parth Arora, Sanjana Roy, Kaustav Nag, Shreya Gupta, Anurag Srivastava
-biggest contributor here is spyder101..
-contributors college IIIT Gwalior..
-Hi people reading this.
-
-This is a really a nice quiz you should give it a try..
 
 
