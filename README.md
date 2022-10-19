@@ -20,7 +20,7 @@ Built Using -  Android Studio
 Main Author -  Sayantan Banerjee.
 
 College - Indian Institute of Information Technology and Management, Gwalior.
-Batch - IPG(B.Tech + M.Tech)
+Batch - IPG(B.Tech + M.Tech).
 Graduation Year: 2023
 
 Contributors :
