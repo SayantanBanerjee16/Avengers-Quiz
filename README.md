@@ -25,7 +25,7 @@ Graduation Year: 2023
 
 Contributors :
 
-Mehul Jain, Rashi Gupta, Ankush Halder, Parth Arora, Sanjana Roy, Kaustav Nag, Shreya Gupta, Anurag Srivastava, Vinay Pratap, Ayushi Gupta,Kaustav Nag
+Mehul Jain, Rashi Gupta, Ankush Halder, Parth Arora, Sanjana Roy, Kaustav Nag, Shreya Gupta, Anurag Srivastava, Vinay Pratap, Ayushi Gupta
 
 
 
