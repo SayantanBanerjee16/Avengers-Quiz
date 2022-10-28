@@ -14,7 +14,7 @@ You can play this quiz only once.
 The developer of this quiz is going to develop more quizes like this in future too.
 Stay tune in with the app for future references.
 
-Language -  Java,Python
+Language -  Java
 Built Using -  Android Studio
 
 Main Author -  Sayantan Banerjee.
